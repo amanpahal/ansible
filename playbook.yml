@@ -1,0 +1,8 @@
+---
+ - hosts: all
+   tasks:
+      - name: check status of jenkins service
+        shell: "sudo systemctl status jenkins"
+        
+      - name: check java version
+        command: java -version
